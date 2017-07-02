@@ -33,6 +33,18 @@ body {
     background-color: rgba(0,0,0,0.4);
 }
 
+.btn-navyblue{
+    border-radius: 0;
+    border: 1px solid #337ab7;
+    text-transform: uppercase;
+}
+
+.btn-navyblue:hover, .btn-navyblue:focus, .btn-navyblue:active {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
@@ -72,13 +84,16 @@ nav.main-nav {
 	border-radius: 0;
 	margin: 0;
 	border: 0;
+    min-height: auto;
 }
 
 #menu-main {
-	text-align: center;
-	float: none;
-	background: rgba(255,255,255,0.1);
-	border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    float: none;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 0;
+    padding: 0;
 }
 
 #menu-main li {
@@ -112,13 +127,14 @@ nav.main-nav {
     transition: all 320ms ease;
 }
 
-#menu-main li a:hover, #menu-main li a:focus {
+#menu-main li a:hover, #menu-main li a:focus,  #menu-main li a:visited {
     background: none;
     opacity: 1;
 }
 
 
-#menu-main li a:hover:after, #menu-main li a:focus:after, #menu-main li.active  {
+
+#menu-main li a:hover:after, #menu-main li a:focus:after, #menu-main li a:visited:after, #menu-main li.active a:after {
     transform: translateY(0);
     opacity: 1;
 }
@@ -214,7 +230,7 @@ nav.main-nav {
     display: table;
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background: url(../img/header.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -222,26 +238,13 @@ nav.main-nav {
     -o-background-size: cover;
 }
 
-/* About */
-
-.about {
-    padding: 50px 0;
-}
-
-/* Services */
-
-.services {
+/* Home page */
+.about, .portfolio, .services, #page-about, #page-services, #page-portfolio, #page-contact  {
     padding: 50px 0;
 }
 
 .service-item {
     margin-bottom: 30px;
-}
-
-/* Portfolio */
-
-.portfolio {
-    padding: 50px 0;
 }
 
 .portfolio-item {
@@ -260,6 +263,7 @@ nav.main-nav {
 
 .map {
     height: 500px;
+    position: relative;
 }
 
 @media(max-width:768px) {
@@ -295,4 +299,149 @@ footer a:hover {
   position: fixed;
   bottom: 5px;
   right: 5px;
+ transition: all 540ms ease;
+}
+/*About Me Page */
+
+.pfbox {
+    display: table;
+    height: 348px;
+    width: 100%;
+}
+
+.pf-img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 20px auto;
+    background: url(../img/pf-img.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.socials-links h4 {
+    color: #337ab7;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+/*service page*/
+#page-services p {
+    font-size: 16px;
+}
+ul.services-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.services-list li {
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-left: 2px solid #245884;
+    background-color: rgba(241, 241, 241, 0.43);
+    position: relative;
+}
+
+.services-list li:before {
+	content: '';
+	position: absolute;
+	display: block;
+	border: 4px solid #245884;
+	left: -8px;
+	bottom: 8px;
+	padding: 4px 3px;
+	border-radius: 3px;
+}
+
+.services-list li:after {
+    top:0;
+    left: 0;
+    width: 0;
+    z-index:-1;
+    content: '';
+    height: 100%;
+	display: block;
+	position: absolute;
+    background-color: #337ab7;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.services-list li:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.services-list li:hover::after {
+    width: 100%;
+}
+
+
+/*page contact */
+.contact-header {
+    text-align: center;
+}
+
+.contact-header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.item-left {
+	font-size: 35px;
+	color: #337ab7;
+}
+
+.item-right p {
+	font-size: 16px;
+	margin: 0;
+}
+
+.item-right h3 {
+	margin: 5px 0;
+	font-weight: bold;
+}
+
+.office {
+	position: absolute;
+	background-color: #0095eb;
+	color: #fff;
+	padding: 25px;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.address p {
+display: inline-block;
+vertical-align: top;
+}
+
+@media(min-width:768px) {
+    .office {
+        left: 45%;
+        top: 94px;
+        right: inherit;
+    }
+
+    .office:after {
+	content: '';
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: -9%;
+	border: 10px solid #0095eb;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+    }
+
+
 }
