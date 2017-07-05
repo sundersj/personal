@@ -41,3 +41,27 @@ var onMapClickHandler = function(event) {
 	}
 	// Enable map zooming with mouse scroll when the user clicks the map
 $('.map').on('click', onMapClickHandler);
+
+
+$(document).on('click', '.sidebar-link , .profile-link', function() {
+	var clName = $(this).attr('class');
+	var sidebar = $('.sidebar_cotainer');
+	var wrapper = $('.js-body-wrapper');
+	if(clName == 'profile-link') {
+		wrapper.fadeIn();
+		$('body').addClass('bd-scroll');
+		sidebar.addClass('menu-toggle');
+	}
+
+	if(clName == 'sidebar-link') {
+		sidebar.removeClass('menu-toggle');
+		wrapper.fadeOut();
+		$('body').removeClass('bd-scroll');
+	}
+});
+
+$(document).on('click', '.js-body-wrapper', function() {
+	$(this).fadeOut();
+	$('body').removeClass('bd-scroll');
+	$('.sidebar_cotainer').removeClass('menu-toggle');
+});
