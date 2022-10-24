@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+@import '~boxicons/css/boxicons.min.css';
+@import 'css/style.css';
+
+
+// .typed {
+//     overflow: hidden;
+//     display: inline-block;
+//     border: 0;
+
+//     &::after {
+//         position: absolute;
+//         content: '';
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-color: #e9ecef !important;
+//         border-left: 2px solid white;
+//         animation: typing 3s steps(21) infinite
+//     }
+
+//     @keyframes typing {
+//         100% {
+//             left: 110%;
+//         }
+//     }
+// }
+
+.info {
+    box-shadow: none !important;
+}
