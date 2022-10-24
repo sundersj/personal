@@ -11,11 +11,24 @@ const SectionAbout = () =>
 
                 <div className="section-title">
                     <h2>About</h2>
-                    <p>I am super dedicated Gurgaon, India based professional with 5+ years of experience in providing web-design & development services all over the world.Experienced Full Stack developer with a demonstrated history of working in development & design. Skilled in PHP, Laravel, OOP, MVC Pattern, Mysql, Database design, Web Design, Html5, CSS, SAAS, AJAX, Javascript, jquery, Bootstrap. Strong arts and design.
-                        I can offer you all the advantages of freelancing, realistic prices and client confidentially without the worry with a passion for developing cost effective websites.
-                        All my work meets W3C standards to ensure accessibility, SEO and supported in all major web browsers. My coding is hand written, clean, W3C compliant, cross browser compatible and search engine friendly. I understand the importance of project deadlines and will make sure your project is delivered on time, every time.
-                        I am passionate about my work and having an extensive experience in web development and design. I always recommended the best technologies to my clients and specialise in modern content management systems allowing clients to easily update their own websites.
-                    </p>
+                    <div className='mb-3'>
+                        Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering 5+ years of related experience.
+                    </div>
+                    <div className='mb-3'>
+                        Skilled in directing development with a creative and performance-oriented approach. Well-organized and customer-focused with proven skills in project management and team leadership.
+                    </div>
+                    <div className='mb-3'>
+                        Experienced in producing and updating web and mobile-based applications. Optimizes structures and processes to accomplish customer targets and promote company loyalty. Expert in diverse programming languages.
+                    </div>
+                    <div className='mb-3'>
+                        Accomplished in troubleshooting and resolving issues by debugging programs and managing. Increase proficiencies through web development and design. Offering expertise in LARAVEL, PHP, OOP, API, JAVASCRIPT JQUERY  and REACT and many more.
+                    </div>
+                    <div className='mb-3'>
+                        Talented Software Development leader experienced in producing and updating web based applications and systems. Optimizes structures and processes to accomplish customer targets and promote company loyalty. Expert in diverse programming languages.
+                    </div>
+                    <div className='mb-3'>
+                        Complex problem-solver with analytical and driven mindset. Dedicated to achieving demanding development objectives according to tight schedules while producing impeccable code.
+                    </div>
                 </div>
 
                 <div className="row">

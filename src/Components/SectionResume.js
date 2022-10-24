@@ -47,7 +47,7 @@ const SectionResume = () =>
                         <h3 className="resume-title">Professional Experience</h3>
                         <div className="resume-item">
                             <h4>Full Stack Developer</h4>
-                            <h5>May-2022 - Present</h5><br />
+                            <h5>JUNE-2022 - Present</h5><br />
                             <h5>UPWORK.COM</h5>
                             <p><em>Remote based</em></p>
                             <ul>
