@@ -16,7 +16,7 @@ const SectionResume = () =>
                         <h3 className="resume-title">Sumary</h3>
                         <div className="resume-item pb-0">
                             <h4>Sunder Singh</h4>
-                            <p><em> Full stack developer with 5+ years of experience in providing web-design & development services all over the world.</em></p>
+                            <p><em>Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering 5+ years of related experience.</em></p>
                             <ul>
                                 <li>Sukhrali Enclave, Gurgaon, India</li>
                                 <li>+91-9306240152</li>
@@ -74,7 +74,7 @@ const SectionResume = () =>
                         <div className="resume-item">
                             <h4>Php Developer</h4>
                             <h5> Aug-2018 - Mar-2019</h5><br />
-                            <h5>99APP.COM</h5>
+                            <h5>99Apptechnologies.com</h5>
                             <p><em>Office based</em></p>
                             <ul>
                                 <li>Handling backend and developing new feature</li>
@@ -82,6 +82,18 @@ const SectionResume = () =>
                                 <li>Discussing with clients about requirements of project and update them about status</li>
                                 <li>Merging codes into production server and maintaining it.</li>
                                 <li>Reviewing and optimizing codes.</li>
+                            </ul>
+                        </div>
+                        <div className="resume-item">
+                            <h4>Php Developer</h4>
+                            <h5>Set-2014 - July-2018</h5><br />
+                            <h5>UPWORK.COM</h5>
+                            <p><em>Remote based</em></p>
+                            <ul>
+                                <li>Developing projects from scratch and maintaing the codebase.</li>
+                                <li>Design and develop new features in web.</li>
+                                <li>Deploying codes to production server and maintaing server configuration and security</li>
+                                <li>Discussing upon future goal with client of project and keep them posted about the project's status</li>
                             </ul>
                         </div>
                     </div>

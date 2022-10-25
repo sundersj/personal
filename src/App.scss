@@ -30,3 +30,42 @@
 .info {
     box-shadow: none !important;
 }
+
+.portfolio-wrap {
+    height: 100%;
+    min-height: 343px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .portfolio-links {
+        a {
+            width: 100% !important;
+        }
+    }
+
+}
+
+.p_bg_1 {
+    background-image: url(../src/img/portfolio/portfolio-1.jpg);
+}
+
+.p_bg_2 {
+    background-image: url(../src/img/portfolio/portfolio-2.jpg);
+}
+
+.p_bg_3 {
+    background-image: url(../src/img/portfolio/portfolio-3.jpg);
+}
+
+.p_bg_4 {
+    background-image: url(../src/img/portfolio/portfolio-4.jpg);
+}
+
+.p_bg_5 {
+    background-image: url(../src/img/portfolio/portfolio-5.jpg);
+}
+
+.p_bg_6 {
+    background-image: url(../src/img/portfolio/portfolio-6.jpg);
+}
