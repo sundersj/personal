@@ -10,9 +10,8 @@ function App()
 	return (
 		<div className="App">
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="/personal" element={<Home />} />
 				<Route path="portfolio/:id" element={<PortfolioDetail />} />
-
 				<Route path="*" element={<PageNotfound />} />
 			</Routes>
 		</div>

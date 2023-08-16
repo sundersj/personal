@@ -12,7 +12,7 @@ const SectionAbout = () =>
                 <div className="section-title">
                     <h2>About</h2>
                     <div className='mb-3'>
-                        Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering 5+ years of related experience.
+                        Well-qualified Laravel Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering 5+ years of related experience.
                     </div>
                     <div className='mb-3'>
                         Skilled in directing development with a creative and performance-oriented approach. Well-organized and customer-focused with proven skills in project management and team leadership.
@@ -36,7 +36,7 @@ const SectionAbout = () =>
                         <img className='img-fluid' src={prorfile} alt="" />
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3>Full Stack Developer</h3>
+                        <h3>Laravel Full Stack Developer</h3>
                         {/* <p className="fst-italic">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                             magna aliqua.
