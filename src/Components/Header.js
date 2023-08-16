@@ -1,8 +1,24 @@
 import { Link } from 'react-router-dom';
 import prorfile from '../img/profile-img.jpg';
+import { useState } from 'react';
 
 const Header = () =>
 {
+
+    const [activeClass, setActiveClass] = useState('hero');
+
+
+    const scrollToDiv = (divId) =>
+    {
+        const targetDiv = document.getElementById(divId);
+        if (targetDiv) {
+            setActiveClass(divId);
+            targetDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+
+
     return (
 
         <header id="header">
@@ -19,29 +35,29 @@ const Header = () =>
                 <nav id="navbar" className="nav-menu navbar">
                     <ul>
                         <li>
-                            <a href="/#hero" className="nav-link scrollto active" >
+                            <div onClick={() => scrollToDiv('hero')} className={`nav-link scrollto ${activeClass === 'hero' ? 'active' : ''}`} >
                                 <i className="bx bx-home"></i> <span>Home</span>
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a href="/#about" className="nav-link scrollto" >
+                            <div onClick={() => scrollToDiv('about')} className={`nav-link scrollto ${activeClass === 'about' ? 'active' : ''}`}>
                                 <i className="bx bx-user"></i> <span>About</span>
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a href="/#resume" className="nav-link scrollto" >
+                            <div onClick={() => scrollToDiv('resume')} className={`nav-link scrollto ${activeClass === 'resume' ? 'active' : ''}`} >
                                 <i className="bx bx-file-blank"></i> <span>Resume</span>
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a href="/#portfolio" className="nav-link scrollto" >
+                            <div onClick={() => scrollToDiv('portfolio')} className={`nav-link scrollto ${activeClass === 'portfolio' ? 'active' : ''}`} >
                                 <i className="bx bx-book-content"></i> <span>Portfolio</span>
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a href="/#about" className="nav-link scrollto" >
+                            <div onClick={() => scrollToDiv('contact')} className={`nav-link scrollto ${activeClass === 'contact' ? 'active' : ''}`}>
                                 <i className="bx bx-envelope"></i> <span>Contact</span>
-                            </a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
