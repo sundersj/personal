@@ -45,7 +45,7 @@ const SectionAbout = () =>
                             <div className="col-lg-6">
                                 <ul>
                                     <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>20 Nov 1992</span></li>
-                                    <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://sundersj.github.io/</span></li>
+                                    <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://sundersj.github.io/personal</span></li>
                                     <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91-9306240152</span></li>
                                     <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>Gurgaon, India</span></li>
                                 </ul>
