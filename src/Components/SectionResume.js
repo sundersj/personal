@@ -25,7 +25,7 @@ const SectionResume = () =>
                         </div>
                         <h3 className="resume-title">Education</h3>
                         <div className="resume-item">
-                            <h4>Bachlor - Computer Science </h4>
+                            <h4>Bachelor - Computer Science </h4>
                             <h5>2019 - 2022</h5><br />
                             <h5>CGPA:- 6.93</h5>
                             <p><em>Om Global Stearling University , Hisar, Haryana</em></p>
